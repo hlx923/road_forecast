@@ -31,7 +31,7 @@ road_locations = {
     '教工路': (30.31, 120.11)
 }
 
-# 添加经纬度列
+# 添加经纬度列 
 df['lat'] = df['道路名称'].map(lambda x: road_locations.get(x, (30.25, 120.15))[0])
 df['lon'] = df['道路名称'].map(lambda x: road_locations.get(x, (30.25, 120.15))[1])
 
